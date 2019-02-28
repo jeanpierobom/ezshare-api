@@ -61,7 +61,7 @@ functions:
           authorizer: aws_iam          
   list:
     # Defines an HTTP API endpoint that calls the main function in list.js
-    # - path: url path is /notes
+    # - path: url path is /community-posts
     # - method: GET request
     handler: list.main
     events:
@@ -69,7 +69,7 @@ functions:
           path: community-posts
           method: get
           cors: true
-          authorizer: aws_iam          
+          #authorizer: aws_iam     
   update:
     # Defines an HTTP API endpoint that calls the main function in update.js
     # - path: url path is /community-posts/{id}
